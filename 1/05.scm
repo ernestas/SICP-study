@@ -5,7 +5,7 @@
 ; normal-order evaluation
 ; (p) is substituted for y,
 ; but is not evaluated until it is needed,
-; whis is never, and test returns 0
+; which is never, and test returns 0
 
 (define (p) (p))
 
