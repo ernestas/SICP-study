@@ -70,3 +70,8 @@
 ; assuming 1st is loweb-bound and 2nd is upper bound
 (define (upper-bound i) (cdr i))
 (define (lower-bound i) (car i))
+
+;; tests
+
+(mul-interval (make-interval 1 3)
+              (make-interval 2 4))

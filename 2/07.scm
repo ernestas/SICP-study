@@ -29,3 +29,6 @@
 
 (mul-interval (make-interval 1 3)
               (make-interval 2 4))
+
+(div-interval (make-interval 1 3)
+              (make-interval 2 4))

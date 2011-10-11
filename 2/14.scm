@@ -57,8 +57,21 @@
 (define a (make-center-percent 10 2))
 (define b (make-center-percent 20 1))
 
-(par1 a b)
-(par2 a b)
+(define ab1 (par1 a b))
+(center ab1)
+(percent ab1)
 (newline)
-(par1 a a)
-(par2 a a)
+
+(define ab2 (par2 a b))
+(center ab2)
+(percent ab2)
+(newline)
+
+(define aa1 (par1 a a))
+(center aa1)
+(percent aa1)
+(newline)
+
+(define aa2 (par2 a a))
+(center aa2)
+(percent aa2)
