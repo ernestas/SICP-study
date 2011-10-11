@@ -7,3 +7,4 @@ All exercises were done in DrRacket under PrettyBig. Exercises 1.22, 1.23  and 1
 ## Lessons learned
 
 * [Chapter 1](/ernestas/SICP-study/blob/master/lessons_learned/chapter1.md)
+* [Chapter 2](/ernestas/SICP-study/blob/master/lessons_learned/chapter2.md)
