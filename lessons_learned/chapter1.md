@@ -1,3 +1,5 @@
+# Chapter 1
+
 ## Section 1.1
 
 ### Declarative (what) vs imperative (how) knowledge
