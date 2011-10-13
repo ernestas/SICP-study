@@ -21,8 +21,9 @@
   (if (null? s)
       (list nil)
       (let ((rest (subsets (cdr s))))
-        (append rest (map-cust (lambda (x) (cons (car s) x))
-                               rest)))))
+        (append rest
+                (map-cust (lambda (x) (cons (car s) x))
+                          rest)))))
 
 ;; tests
 
