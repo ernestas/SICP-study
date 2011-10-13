@@ -20,9 +20,9 @@
   (accumulate +
               0
               (map-cust (lambda (x) (if (not (pair? x))
-                                   1
-                                   (count-leaves x)))
-                   tree)))
+                                        1
+                                        (count-leaves x)))
+                        tree)))
 
 ;; helpers
 
