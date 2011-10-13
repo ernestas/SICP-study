@@ -34,6 +34,6 @@
 (fold-right + 0 (list 1 2 3 4))
 (fold-left + 0 (list 1 2 3 4))
 
-;; op has to be associative to guarantee thhat
+;; op has to be associative to guarantee that
 ;; fold-right and fold-left produce the same values
 ;; for any sequence
