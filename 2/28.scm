@@ -1,7 +1,6 @@
 ;; fringe v1
 
 (define (fringe items)
-  (define nil '())
   (if (null? items)
       nil
       (let ((first (car items)))
@@ -13,7 +12,6 @@
 ;; fringe v2
 
 (define (fringe2 items)
-  (define nil '())
   (cond ((null? items) nil)
         ((not(pair? items)) (list items))
         (else (append (fringe (car items))
