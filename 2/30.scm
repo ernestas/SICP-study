@@ -1,11 +1,3 @@
-;; map
-
-(define (map-cust proc items)
-  (if (null? items)
-      nil
-      (cons (proc (car items))
-            (map-cust proc (cdr items)))))
-
 ;; nil
 
 (define nil '())
