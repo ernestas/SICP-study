@@ -1,11 +1,3 @@
-;; map
-
-(define (map-cust proc items)
-  (if (null? items)
-      nil
-      (cons (proc (car items))
-            (map-cust proc (cdr items)))))
-
 ;; nil
 
 (define nil '())
@@ -22,8 +14,8 @@
       (list nil)
       (let ((rest (subsets (cdr s))))
         (append rest
-                (map-cust (lambda (x) (cons (car s) x))
-                          rest)))))
+                (map (lambda (x) (cons (car s) x))
+                     rest)))))
 
 ;; tests
 
