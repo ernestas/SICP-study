@@ -10,6 +10,7 @@ A procedural representation of pairs - message passing.
 
 Church numerals - Alonzo Church.
 
+
 ## Section 2.2
 
 ### Closure property
@@ -27,3 +28,18 @@ One procedure's output is another's input. Similarly to signal flow in signal-pr
 The sequence paradigm is extended to include many computations that are commonly expressed using nested loops.
 
 ### *Metalinguistic abstraction* - a picture language
+
+
+## Section 2.3
+
+### Representing sets as:
+
+* unordered lists
+* ordered lists
+* binary trees
+
+### Huffman encoding trees
+
+*Huffman coding* is an *entropy encoding* algorithm.
+
+*Entropy encoding* is a lossless data compression scheme that is independent of the specific characteristics of the medium. It creates and assigns a *unique prefix-free* code to each unique symbol that occurs in the input.
