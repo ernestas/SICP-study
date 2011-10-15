@@ -22,7 +22,8 @@
 (define (flatmap proc seq)
   (accumulate append nil (map proc seq)))
 
-;; ordered triples i, j, k <= n
+;; ordered triples of distinct positive integers i, j, k
+;; i, j, k <= n
 ;; i + j + k = s
 
 (define (ordered-triples-sum n s) 
@@ -34,12 +35,14 @@
   (flatmap (lambda (i) 
              (flatmap (lambda (j) 
                         (map (lambda (k) (list i j k)) 
-                             (enumerate-interval 1 (- i 2)))) 
+                             (enumerate-interval 1 (- j 1))))
                       (enumerate-interval 1 (- i 1)))) 
            (enumerate-interval 1 n)))
 
 ;; tests
 
-(unique-triples 3)
+(unique-triples 5)
 
-(ordered-triples-sum 4 5)
+(ordered-triples-sum 5 7)
+(ordered-triples-sum 5 8)
+(ordered-triples-sum 5 9)
