@@ -19,8 +19,12 @@ The means that the language provides for combining simple ideas to form more com
 * *primitive expressions*, which represent the simplest entities the language is concerned with,
 * *means of combination*, by which compound elements are built from simpler ones, and
 * *means of abstraction*, by which compound elements can be named and manipulated as units.
-	* `(define square (lombda (x) (* x x)))` is the same as
-	* `(define (square x) (* x x))`
+
+````` scheme
+(define square (lombda (x) (* x x)))
+;; is the same as
+(define (square x) (* x x))
+`````
 
 ### Applicative order vs normal order evaluation:
 
