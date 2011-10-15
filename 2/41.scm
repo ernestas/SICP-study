@@ -22,16 +22,6 @@
 (define (flatmap proc seq)
   (accumulate append nil (map proc seq)))
 
-;; permutations
-
-(define (permutations s)
-  (if (null? s)	        ; empty set?
-      (list nil)	; sequence containing empty set
-      (flatmap (lambda (x)
-                 (map (lambda (p) (cons x p))
-                      (permutations (remove x s))))
-               s)))
-
 ;; ordered triples i, j, k <= n
 ;; i + j + k = s
 
@@ -49,8 +39,6 @@
            (enumerate-interval 1 n)))
 
 ;; tests
-
-(permutations '(1 2 3))
 
 (unique-triples 3)
 
