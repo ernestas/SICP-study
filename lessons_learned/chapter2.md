@@ -43,3 +43,14 @@ The sequence paradigm is extended to include many computations that are commonly
 *Huffman coding* is an *entropy encoding* algorithm.
 
 *Entropy encoding* is a lossless data compression scheme that is independent of the specific characteristics of the medium. It creates and assigns a *unique prefix-free* code to each unique symbol that occurs in the input.
+
+
+## Section 2.4
+
+*Dispatch on type* is a general strategy of checking the type of a datum and calling an appropriate procedure.
+
+*Data-directed programming* is a "dispatch" technique on procedures for integrating (additively) separately developed data-type modules, based on the programmers manual setup of dynamic tables for procedure access. In modern object-oriented programming languages it is implemented as polymorphism.
+
+*Message passing* - intelligent data objects (procedures) that dispatch on operation names.
+
+Which dispatch to use when: [2/76.scm](https://github.com/ernestas/SICP-study/blob/master/2/76.scm)
