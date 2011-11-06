@@ -20,7 +20,7 @@ The means that the language provides for combining simple ideas to form more com
 * *means of abstraction*, by which compound elements can be named and manipulated as units.
 
 ````` scheme
-(define square (lombda (x) (* x x)))
+(define square (λ (x) (* x x)))
 ;; is the same as
 (define (square x) (* x x))
 `````
