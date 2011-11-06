@@ -1,6 +1,6 @@
-# Chapter 2
+# 2 Building Abstractions with Data
 
-## Section 2.1
+## 2.1 Introduction to Data Abstraction
 
 ### Data abstraction
 
@@ -11,7 +11,7 @@ A procedural representation of pairs - message passing.
 Church numerals - Alonzo Church.
 
 
-## Section 2.2
+## 2.2 Hierarchical Data and the Closure Property
 
 ### Closure property
 
@@ -30,7 +30,7 @@ The sequence paradigm is extended to include many computations that are commonly
 ### *Metalinguistic abstraction* - a picture language
 
 
-## Section 2.3
+## 2.3 Symbolic Data
 
 ### Representing sets as:
 
@@ -45,7 +45,7 @@ The sequence paradigm is extended to include many computations that are commonly
 *Entropy encoding* is a lossless data compression scheme that is independent of the specific characteristics of the medium. It creates and assigns a *unique prefix-free* code to each unique symbol that occurs in the input.
 
 
-## Section 2.4
+## 2.4 Multiple Representation for Abstract Data
 
 *Dispatch on type* is a general strategy of checking the type of a datum and calling an appropriate procedure.
 
@@ -55,7 +55,7 @@ The sequence paradigm is extended to include many computations that are commonly
 
 Which dispatch to use when: [2/76.scm](https://github.com/ernestas/SICP-study/blob/master/2/76.scm)
 
-## Section 2.5
+## 2.5 Systems with Generic Operations
 
 *Generic Operations* are operations that use data-directed techniques and are generic over different kinds of arguments.
 

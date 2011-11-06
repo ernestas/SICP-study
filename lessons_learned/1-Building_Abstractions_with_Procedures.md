@@ -1,6 +1,6 @@
-# Chapter 1
+# 1 Building Abstractions with Procedures
 
-## Section 1.1
+## 1.1 The Elements of Programming
 
 ### Declarative (what) vs imperative (how) knowledge
 
@@ -35,12 +35,12 @@ The means that the language provides for combining simple ideas to form more com
 	* fully expand and then reduce
 
 
-## Section 1.2
+## 1.2 Procedures and the Processes They Generate
 
 ### Recursive vs Iterative *Processes*
 
 
-## Section 1.3
+## 1.3 Formulating Abstractions with Higher-Order Procedures
 
 ### Higher order procedures (procedures have first-class status):
 
