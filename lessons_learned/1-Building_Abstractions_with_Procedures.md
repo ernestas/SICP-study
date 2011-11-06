@@ -1,7 +1,5 @@
 # 1 Building Abstractions with Procedures
 
-## 1.1 The Elements of Programming
-
 ### Declarative (what) vs imperative (how) knowledge
 
 LISP *procedures* control *processes* which are *imperative* knowledge.
@@ -12,7 +10,8 @@ LISP *procedures* control *processes* which are *imperative* knowledge.
 * Conventional interfaces
 * Metalinguistic abstraction
 
-### The elements of programming
+
+## 1.1 The Elements of Programming
 
 The means that the language provides for combining simple ideas to form more complex ideas:
 
