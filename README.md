@@ -4,6 +4,10 @@
 
 All exercises were done in DrRacket under PrettyBig. Exercises 1.22, 1.23  and 1.24 need access to 'runtime' variable and were done in MIT-Scheme.
 
+## Video Lectures by Hal Abelson and Gerald Jay Sussman
+
+http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/
+
 ## Lessons learned
 
 * [1. Building Abstractions with Procedures](/ernestas/SICP-study/blob/master/lessons_learned/1-Building_Abstractions_with_Procedures.md)
