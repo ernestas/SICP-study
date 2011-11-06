@@ -1,3 +1,5 @@
+;; FUN
+
 ;; 0
 (define zero
   (lambda (f) (lambda (x) x)))

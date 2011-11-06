@@ -1,3 +1,5 @@
+;; FUN
+
 (define (cons-cust x y)
   (lambda (m) (m x y)))
 

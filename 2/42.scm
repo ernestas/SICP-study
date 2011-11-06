@@ -1,3 +1,5 @@
+;; FUN?
+
 ;; enumerate (not built in DrRacket)
 
 (define (enumerate-interval a b) ; normal scheme version
