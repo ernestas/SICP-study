@@ -147,7 +147,7 @@
 ;; tests
 
 ;; put & get procedures
-(include "73_put_get.scm")
+(include "../4/73_put_get.scm")
 
 (install-integer-package)
 (install-polynomial-package)

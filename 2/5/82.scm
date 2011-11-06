@@ -161,7 +161,7 @@
   (hash-table-get *coercion-table* (list type-from type-to) #f))
 
 ;; put & get procedures
-(include "73_put_get.scm")
+(include "../4/73_put_get.scm")
 
 
 (install-scheme-number-package)
