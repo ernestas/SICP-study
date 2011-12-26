@@ -3,7 +3,7 @@
     (cond ((null? fast) #f)
           ((eq? slow fast) #t)
           (else (iter (cdr slow)
-				      (cddr fast)))))
+                      (cddr fast)))))
   (iter x (cdr x)))
 
 ;; tests
