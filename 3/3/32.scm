@@ -39,11 +39,11 @@
 (and-gate input-a input-b out)
 (newline)
 
-(set-signal! input-a 1)
-(set-signal! input-b 0)
+(set-signal! input-b 1)
+(set-signal! input-a 0)
 (propagate)
 (newline)
 
-(set-signal! input-a 1)
 (set-signal! input-b 0)
+(set-signal! input-a 1)
 (propagate)
