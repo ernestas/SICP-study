@@ -39,3 +39,14 @@ The **environment** model thus explains the two key properties that make **local
 We say that an **action**, A, had an effect on an object, X, (or equivalently, that X was changed by A) if some property, P, which was true of X before A became false of X after A.
 
 **Identity.** We say that two objects, X and Y, are the same if any action which has an effect of X has the same effect on Y.
+
+
+## 3.3 Modeling with Mutable Data
+
+To model compound objects with changing state, design data abstractions to include, in addition to selectors and constructors, operations called **mutators**, which modify data objects. Basic **mutators** are defined for _pairs_, so that _pairs_ can serve as building blocks for constructing mutable data objects. Data objects for which _mutators_ are defined are known as **mutable data objects**. Mutation is just **assignment**.
+
+**Queues** and **Tables**
+
+**Event-driven simulation**, in which actions ("events") trigger further events that happen at a later time, which in turn trigger more events, and so so.
+
+_Nondirectionality_ of computation is the distinguishing feature of **constraint-based systems**.
