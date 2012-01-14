@@ -70,7 +70,7 @@
 ;;         |            E1    |              +-------------+
 ;;         V           +-------------+  <----| m: 'deposit | dispatch body
 ;;     ___   ___       | balance: 90 |       +-------------+
-;;    /   \ /   \      | withdraw    |       
+;;    /   \ /   \      | withdraw    |
 ;;   |  *  |  *  |---> | deposit     |        E3
 ;;    \___/ \___/      | dispatch    |       +------------+
 ;;      |              +-------------+  <----| amount: 40 | deposit body

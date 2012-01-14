@@ -37,9 +37,9 @@
 ;; make-table using binary tree
 
 (define (make-table)
-  
+
   (let ((local-table (list '*table*)))
-    
+
     (define (lookup keys)
       (define (lookup-iter keys table)
         (let ((subtable (lookup-tree (car keys) (cdr table))))
@@ -49,7 +49,7 @@
                   (lookup-iter (cdr keys) subtable))
               false)))
       (lookup-iter keys local-table))
-    
+
     (define (insert! keys value)
       (define (new-table keys)
         (if (null? (cdr keys))
@@ -68,7 +68,7 @@
                                     (cdr table)))))
         'ok)
       (insert-iter! keys local-table))
-    
+
     (define (dispatch m)
       (cond ((eq? m 'lookup-proc) lookup)
             ((eq? m 'insert-proc!) insert!)

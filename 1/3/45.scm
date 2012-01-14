@@ -28,7 +28,7 @@
 
 ;---
 
-(define (square-root x) 
+(define (square-root x)
   (fixed-point (average-damp (lambda (y) (/ x y)))
                1.0))
 (define (cube-root x)

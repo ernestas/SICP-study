@@ -18,12 +18,12 @@
               (number? a2)) (+ a1 a2))
         (else (list '+ a1 a2))))
 
-(define (sum? x) 
+(define (sum? x)
   (and (pair? x)
        (eq? (car x) '+)))
 
 (define (addend s) (cadr s))
-(define (augend s) 
+(define (augend s)
   (accumulate make-sum 0 (cddr s)))
 
 ;; product
@@ -41,7 +41,7 @@
        (eq? (car x) '*)))
 
 (define (multiplier p) (cadr p))
-(define (multiplicand p) 
+(define (multiplicand p)
   (accumulate make-product 1 (cddr p)))
 
 ;; exponent

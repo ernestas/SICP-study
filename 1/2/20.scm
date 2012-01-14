@@ -9,12 +9,12 @@
 ;---
 (if (= (remainder 206 40) 0) ; 1
     40
-    (gcd (remainder 206 40) 
+    (gcd (remainder 206 40)
          (remainder 40 (remainder 206 40))))
 ;---
 (if (= (remainder 40 (remainder 206 40)) 0) ; 2
     (remainder 206 40)
-    (gcd (remainder 40 (remainder 206 40)) 
+    (gcd (remainder 40 (remainder 206 40))
          (remainder (remainder 206 40) (remainder 40 (remainder 206 40)))))
 ;---
 (if (= (remainder (remainder 206 40) (remainder 40 (remainder 206 40))) 0) ; 4

@@ -46,17 +46,17 @@
 
 ; corner-split
 
-(define (corner-split painter n) 
-  (if (= n 0) 
-      painter 
-      (beside (below painter (up-split painter (- n 1))) 
+(define (corner-split painter n)
+  (if (= n 0)
+      painter
+      (beside (below painter (up-split painter (- n 1)))
               (below (right-split painter (- n 1)) (corner-split painter (- n 1))))))
 
 ;; c
 
 (define (square-of-four tl tr bl br)
   (lambda (painter)
-    (let ((top (beside (tl painter) (tr painter))) 
+    (let ((top (beside (tl painter) (tr painter)))
           (bottom (beside (bl painter) (br painter))))
       (below bottom top))))
 

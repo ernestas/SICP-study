@@ -6,7 +6,7 @@
   (define (deposit amount)
     (set! balance (+ balance amount))
     balance)
-  
+
   (define bad-pass 0)
 
   (define (bad-password amount)
@@ -14,9 +14,9 @@
            (if (> bad-pass 7)
                call-the-cops
                (print "Incorrect password"))))
-  
+
   (define call-the-cops "Five-o is on the way")
-  
+
   (define (dispatch password m)
     (if (eq? password acc-password)
         (cond ((eq? m 'withdraw) withdraw)

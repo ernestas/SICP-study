@@ -9,7 +9,7 @@
 ;;
 ;; (* n (+ (* 2 half-adder-delay)
 ;;         or-gate-delay))
-;; 
+;;
 ;; (* n (+ (* 2 (+ (max (+ and-gate-delay inverter-delay)
 ;;                      or-gate-delay)
 ;;                 and-gate-delay))

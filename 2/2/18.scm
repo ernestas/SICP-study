@@ -2,7 +2,7 @@
   (define (reverse-iter items items-rev)
     (if (null? items)
         items-rev
-        (reverse-iter (cdr items) 
+        (reverse-iter (cdr items)
                       (cons (car items) items-rev))))
   (reverse-iter items ()))
 

@@ -26,7 +26,7 @@
       (if (has-value? me)
           (inform-about-value new-constraint))
       'done)
-    
+
     (define (me request)
       (cond ((eq? request 'has-value?)
              (if informant true false))

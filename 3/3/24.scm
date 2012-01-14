@@ -4,7 +4,7 @@
     (cond ((null? records) false)
           ((same-key? key (caar records)) (car records))
           (else (assoc-cust key (cdr records)))))
-  
+
   (let ((local-table (list '*table*)))
     (define (lookup key-1 key-2)
       (let ((subtable (assoc-cust key-1 (cdr local-table))))

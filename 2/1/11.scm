@@ -9,14 +9,14 @@
                  (b (* uy ux)))
              (make-interval (min a b)
                             (max a b))))
-          
+
           ((and (>= ux 0) (< lx 0) ; x-+ y--
                 (< uy 0) (< ly 0))
            (let ((a (* yl lx))
                  (b (* yl ux)))
              (make-interval (min a b)
                             (max a b))))
-          
+
           ((and (>= ux 0) (< lx 0) ; x-+ y-+
                 (>= uy 0) (< ly 0))
            (let ((p1 (* (lower-bound x) (lower-bound y)))
@@ -25,21 +25,21 @@
                  (p4 (* (upper-bound x) (upper-bound y))))
              (make-interval (min p1 p2 p3 p4)
                             (max p1 p2 p3 p4))))
-          
+
           ((and (>= ux 0) (>= lx 0) ; x++ y-+
                 (>= uy 0) (< ly 0))
            (let ((a (* ux ly))
                  (b (* ux uy)))
              (make-interval (min a b)
                             (max a b))))
-          
+
           ((and (>= ux 0) (>= lx 0) ; x++ y++
                 (>= uy 0) (>= ly 0))
            (let ((a (* lx ly))
                  (b (* ux uy)))
              (make-interval (min a b)
                             (max a b))))
-          
+
           ((or (and (< ux 0) (< lx 0) ; x-- y++ OR x++ y--
                     (>= uy 0) (>= ly 0))
                (and (>= ux 0) (>= lx 0)
@@ -48,14 +48,14 @@
                  (b (* ux ly)))
              (make-interval (min a b)
                             (max a b))))
-          
+
           ((and (< ux 0) (< lx 0) ; x-- y-+
                 (>= uy 0) (< ly 0))
            (let ((a (* lx uy))
                  (b (* ux ly)))
              (make-interval (min a b)
                             (max a b))))
-          
+
           ((and (< ux 0) (< lx 0) ; x-- y--
                 (< uy 0) (< ly 0))
            (let ((a (* ux uy))

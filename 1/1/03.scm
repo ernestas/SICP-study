@@ -15,7 +15,7 @@
       b))
 
 (define (sum-of-two-biggest-squares a b c)
-  (sum-of-squares (max-of-two a b) 
+  (sum-of-squares (max-of-two a b)
                   (max-of-two c (min-of-two a b))))
 
 ;; test

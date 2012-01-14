@@ -3,9 +3,9 @@
 
 ;; list-end
 
-(define (list-end sequence) 
-  (if (null? (cdr sequence)) 
-      (car sequence) 
+(define (list-end sequence)
+  (if (null? (cdr sequence))
+      (car sequence)
       sequence))
 
 ;; sum
@@ -17,7 +17,7 @@
               (number? a2)) (+ a1 a2))
         (else (list a1 '+ a2))))
 
-(define (sum? x) 
+(define (sum? x)
   (and (pair? x)
        (eq? (cadr x) '+)))
 

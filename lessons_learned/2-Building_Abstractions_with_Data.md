@@ -17,7 +17,7 @@ Church numerals - Alonzo Church.
 
 An *operation for combining data objects* satisfies the *closure property* if the results of combining things with that *operation* can themselves be combined using the same *operation*.
 
-A *set of elements* is said to be *closed under an operation* if applying the *operation* to elements in the set produces an element that is again an element of the set. 
+A *set of elements* is said to be *closed under an operation* if applying the *operation* to elements in the set produces an element that is again an element of the set.
 
 ### Sequences as *conventional interfaces*
 

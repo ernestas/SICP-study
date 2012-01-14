@@ -40,8 +40,8 @@
 
 (estimate-pi 100000)
 
-(define (P x y) 
-  (< (+ (expt (- x 5) 2) 
-        (expt (- y 7) 2)) 
+(define (P x y)
+  (< (+ (expt (- x 5) 2)
+        (expt (- y 7) 2))
      (expt 3 2)))
 (estimate-integral P 2.0 8.0 4.0 10.0 100000)

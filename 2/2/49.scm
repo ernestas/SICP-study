@@ -20,7 +20,7 @@
 
 ;; b
 
-(define painter-x 
+(define painter-x
   (segments->painter (list (make-segment bl tr)
                            (make-segment br tl))))
 

@@ -15,7 +15,7 @@
     (make-interval (- c w) (+ c w))))
 
 (define (percent i)
-  (* (/ (width i) (center i)) 
+  (* (/ (width i) (center i))
      100))
 
 

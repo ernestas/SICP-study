@@ -5,7 +5,7 @@
   (lambda (f) (lambda (x) x)))
 
 ;; add-1
-(define (add-1 n) 
+(define (add-1 n)
   (lambda (f) (lambda (x) (f ((n f) x)))))
 
 ;; 1
@@ -35,10 +35,10 @@
 ;; add
 ; this is way out of the league of my brain
 ; TODO: review lambda calculus
-(define (add a b) 
-  (lambda (f) 
-    (lambda (x) 
-      ((a f) ((b f) x))))) 
+(define (add a b)
+  (lambda (f)
+    (lambda (x)
+      ((a f) ((b f) x)))))
 
 
 ;; tests

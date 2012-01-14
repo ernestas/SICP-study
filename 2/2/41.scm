@@ -26,17 +26,17 @@
 ;; i, j, k <= n
 ;; i + j + k = s
 
-(define (ordered-triples-sum n s) 
+(define (ordered-triples-sum n s)
   (filter (lambda (triples)
-            (= (accumulate + 0 triples) s)) 
+            (= (accumulate + 0 triples) s))
           (unique-triples n)))
 
 (define (unique-triples n)
-  (flatmap (lambda (i) 
-             (flatmap (lambda (j) 
-                        (map (lambda (k) (list i j k)) 
+  (flatmap (lambda (i)
+             (flatmap (lambda (j)
+                        (map (lambda (k) (list i j k))
                              (enumerate-interval 1 (- j 1))))
-                      (enumerate-interval 1 (- i 1)))) 
+                      (enumerate-interval 1 (- i 1))))
            (enumerate-interval 1 n)))
 
 ;; tests

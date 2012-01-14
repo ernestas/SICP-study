@@ -30,7 +30,7 @@
        (lambda (x) (tag x)))
   'done)
 
-(define (make-scheme-number n) 
+(define (make-scheme-number n)
   ((get 'make 'scheme-number) n))
 
 

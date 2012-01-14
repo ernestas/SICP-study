@@ -19,11 +19,11 @@
 ;; apply-generic
 
 (define (apply-generic op . args)
-  
+
   (define (no-method type-tags)
     (error "No method for these types"
       (list op type-tags)))
-  
+
   (define (raise-into a b)
     "Tries to raise a into the type of b. On success,
     returns the raised a. Otherwise, returns #f"
@@ -34,11 +34,11 @@
                        (get 'raise (list a-type))))
              (raise-into (raise-generic a) b))
             (else #f))))
-  
+
   (let ((type-tags (map type-tag args)))
     (let ((proc (get op type-tags)))
       (if (not (eq? '() proc))
-          
+
           (let ((to-drop (or (eq? op 'add)
                              (eq? op 'sub)
                              (eq? op 'mul)
@@ -46,7 +46,7 @@
             (if to-drop
                 (drop (apply proc (map contents args)))
                 (apply proc (map contents args))))
-          
+
           (if (= (length args) 2)
               (let ((a1 (car args))
                     (a2 (cadr args)))

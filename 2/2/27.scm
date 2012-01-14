@@ -4,7 +4,7 @@
   (define (reverse-iter items items-rev)
     (if (null? items)
         items-rev
-        (reverse-iter (cdr items) 
+        (reverse-iter (cdr items)
                       (cons (car items) items-rev))))
   (reverse-iter items ()))
 
@@ -15,7 +15,7 @@
     (if (null? items)
         items-rev
         (let ((first (car items)))
-          (reverse-iter (cdr items) 
+          (reverse-iter (cdr items)
                         (cons (if (pair? first)
                                   (deep-reverse first)
                                   first)

@@ -31,7 +31,7 @@
 (define (probe name wire)
   (add-action! wire
                (lambda ()
-                 
+
                  (display name)
                  (display " ")
                  (display (current-time the-agenda))

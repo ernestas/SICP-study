@@ -30,7 +30,7 @@
   (fast-prime? n 100))
 
 ;;---
-         
+
 (define (filtered-accumulate combiner null-value term a next b filter)
   (cond ((> a b) null-value)
         ((filter a) (combiner (term a)

@@ -7,7 +7,7 @@
 ;; but which is not one of the arguments' type.
 
 (define (apply-generic op . args)
-  
+
   ;; Returns a list of coerced arguments 'args' to type 'type'.
   (define (coerce-all args type)
     (if (null? args)
@@ -16,11 +16,11 @@
           (if proc
               (cons (proc (car args))
                     (coerce-all (cdr args) type))
-              (cons (car args) 
+              (cons (car args)
                     (coerce-all (cdr args) type))))))
-  
+
   (let ((type-tags (map type-tag args)))
-    
+
     ;; Uses 'coerce-all' to coerce all to the first argument type.
     ;; If 'get' returns a procedure, it is applied to the arguments
     ;; else repeat this with all but first argument.
@@ -33,7 +33,7 @@
                 (if (not (eq? '() proc))
                     (apply proc (map contents first-type-args))
                     (coerce-all-to-first (cdr types))))))))
-    
+
     (coerce-all-to-first type-tags)))
 
 ;; ****

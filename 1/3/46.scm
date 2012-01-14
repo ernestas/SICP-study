@@ -21,7 +21,7 @@
 
 ;---
 
-(define (fixed-point f x) 
+(define (fixed-point f x)
   ((iterative-improve (lambda (a b)
                         (< (abs (- a b)) 0.00001))
                       (lambda (y)

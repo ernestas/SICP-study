@@ -32,7 +32,7 @@
                        action)
         (let ((rest (cdr segments)))
           (if (belongs-before? rest)
-              (set-cdr! segments 
+              (set-cdr! segments
                         (cons (make-new-time-segment time action)
                               (cdr segments)))
               (add-to-segments! rest)))))

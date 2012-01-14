@@ -3,7 +3,7 @@
 (define nil '())
 
 ;; subsets
-;; 
+;;
 ;; appends:
 ;; 1) the set of all subsets excluding the first element
 ;; 2) the set of all subsets excluding the first element,
