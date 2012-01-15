@@ -50,3 +50,20 @@ To model compound objects with changing state, design data abstractions to inclu
 **Event-driven simulation**, in which actions ("events") trigger further events that happen at a later time, which in turn trigger more events, and so so.
 
 _Nondirectionality_ of computation is the distinguishing feature of **constraint-based systems**.
+
+
+## 3.4 Concurrency: Time Is of the Essence
+
+For any events A and B, either A occurs _before_ B, A and B are _simultaneous_, or A occurs _after_ B.
+
+**Serialization** implements the following idea: Processes will execute concurrently, but there will be certain collections of procedures that cannot be executed concurrently.
+
+**Mutual exclusion (Mutex)** refers to the problem of ensuring that no two processes or threads can be accessing a shared resource, such as shared memory.
+
+A **semaphore** (of size n) is a generalization of a mutex. Like a mutex, a semaphore supports acquire and release operations, but it is more general in that up to n processes can acquire it concurrently. Additional processes that attempt to acquire the semaphore must wait for release operations.
+
+In many cases a _mutex_ has a concept of an **"owner"**: the process which locked the mutex is the only process allowed to unlock it. In contrast, _semaphores_ generally do not have this restriction.
+
+Semaphores which allow an arbitrary resource count are called **counting semaphores**, while semaphores which are restricted to the values 0 and 1(or locked/unlocked, unavailable/available) are called **binary semaphores** (same functionality that mutexes have).
+
+**Deadlock** avoidance by securing a shared resource with the lower id first.
