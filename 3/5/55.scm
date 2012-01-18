@@ -7,9 +7,7 @@
                             (partial-sums s))))
 
 ;; integers
-(define (integers-starting-from n)
-  (cons-stream n (integers-starting-from (+ n 1))))
-(define integers (integers-starting-from 1))
+(load "54_integers.scm")
 
 ;; add-streams
 (define (add-streams s1 s2)

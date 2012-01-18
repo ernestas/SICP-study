@@ -5,9 +5,7 @@
   (stream-map * s1 s2))
 
 ;; integers
-(define (integers-starting-from n)
-  (cons-stream n (integers-starting-from (+ n 1))))
-(define integers (integers-starting-from 1))
+(load "54_integers.scm")
 
 ;; factorials
 (define factorials (cons-stream 1

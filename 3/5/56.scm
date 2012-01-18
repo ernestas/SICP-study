@@ -1,9 +1,7 @@
 ;; mit-scheme
 
 ;; scale-stream
-(define (scale-stream stream factor)
-  (stream-map (lambda (x) (* x factor))
-              stream))
+(load "56_scale.scm")
 
 ;; merge
 (define (merge s1 s2)
