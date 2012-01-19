@@ -5,10 +5,6 @@
 ;; integers
 (load "54_integers.scm")
 
-;; add-streams
-(define (add-streams s1 s2)
-  (stream-map + s1 s2))
-
 ;; tests
 
 (stream-ref (partial-sums integers) 4)

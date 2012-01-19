@@ -2,7 +2,7 @@
 
 (load "59_integrate_sin_cos.scm")
 
-(load "60_add.scm")
+(load "55_add.scm")
 (load "60_mul.scm")
 
 ;; tests
