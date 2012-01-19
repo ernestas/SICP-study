@@ -1,0 +1,7 @@
+(define (stream-limit s tolerance)
+  (let ((s2 (stream-cdr s)))
+    (if (< (abs (- (stream-car s)
+                   (stream-car s2)))
+           tolerance)
+        (stream-car s2)
+        (stream-limit s2 tolerance))))
