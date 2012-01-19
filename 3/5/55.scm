@@ -1,10 +1,6 @@
 ;; mit-scheme
 
-;; partial-sums
-(define (partial-sums s)
-  (cons-stream (stream-car s)
-               (add-streams (stream-cdr s)
-                            (partial-sums s))))
+(load "55_partial_sums.scm")
 
 ;; integers
 (load "54_integers.scm")
