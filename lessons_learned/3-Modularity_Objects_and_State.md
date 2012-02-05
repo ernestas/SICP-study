@@ -67,3 +67,23 @@ In many cases a _mutex_ has a concept of an **"owner"**: the process which locke
 Semaphores which allow an arbitrary resource count are called **counting semaphores**, while semaphores which are restricted to the values 0 and 1(or locked/unlocked, unavailable/available) are called **binary semaphores** (same functionality that mutexes have).
 
 **Deadlock** avoidance by securing a shared resource with the lower id first.
+
+
+## 3.5 Streams
+
+
+If **time** is measured in discrete steps, then we can model a **time** function as a (possibly infinite) sequence.
+
+**Streams** are _delayed lists_. Streams use the technique of _delayed evaluation_, which enables us to represent very large (even infinite) sequences as streams.
+
+**Stream processing** lets us model systems that have _state_ without ever using _assignment_ or _mutable data_. Moreover, they avoid some of the theoretical tangles that accompany the introduction of assignment into a programming language.
+
+Iterative processes proceed by updating **state** variables. We can _represent_ **state** as a "timeless" stream of values rather than as a set of variables to be updated. 
+
+We write procedures as if the streams existed "all at once" when, in reality, the computation is performed incrementally, as in traditional programming styles.
+
+**Delay** decouples the _apparent_ order of events in our programs from the _actual_ order of the events that happen in the machine. Delay throws away time. We are _decoupling_ time in the programs from time in the machines. If we give up too much time our language becomes more elegant, but becomes a little bit less expressive.
+
+_Mutability_ and _delayed evaluation_ do not mix well in programming languages, and devising ways to deal with both of these at once is an active area of research.
+
+We began this chapter with the goal of building computational models whose structure matches our perception of the real world we are trying to model. We can model the world as a collection of separate, time-bound, interacting objects with state, or we can model the world as a single, timeless, stateless unity. Each view has powerful advantages, but neither view alone is completely satisfactory. **A grand unification has yet to emerge.**
