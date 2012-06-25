@@ -2,5 +2,6 @@ Structure and Interpretation of Computer Programs.pdf
 Structure and Interpretation of Computer Programs copy.pdf
 *.scm~
 *.swp
+*.vim
 .vagrant
 Vagrantfile
