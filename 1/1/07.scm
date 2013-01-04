@@ -3,9 +3,9 @@
 
 (define (sqrt-iter guess x)
   (if (good-enough? (/ guess (improve guess x)))
-          guess
-          (sqrt-iter (improve guess x)
-                     x)))
+      guess
+      (sqrt-iter (improve guess x)
+		 x)))
 
 (define (good-enough? ratio)
   (and (< ratio 1.001) (> ratio 0.999)))
