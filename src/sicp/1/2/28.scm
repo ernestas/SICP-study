@@ -1,4 +1,4 @@
-(include "28_prime.scm")
+(load "28_prime.scm")
 
 (prime? 2)
 (prime? 3)
