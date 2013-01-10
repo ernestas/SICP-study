@@ -6,9 +6,17 @@
 (define (filtered-accumulate combiner null-value term a next b filter)
   (cond ((> a b) null-value)
         ((filter a) (combiner (term a)
-                              (filtered-accumulate combiner null-value term (next a) next b filter)))
+                              (filtered-accumulate combiner
+                                                   null-value
+                                                   term
+                                                   (next a)
+                                                   next b filter)))
         (else (combiner null-value
-                        (filtered-accumulate combiner null-value term (next a) next b filter)))))
+                        (filtered-accumulate combiner
+                                             null-value
+                                             term
+                                             (next a)
+                                             next b filter)))))
 
 ;;---
 
