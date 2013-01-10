@@ -1,3 +1,4 @@
+(define (identity x) x)
 (define (inc x) (+ x 1))
 
 (define (sum term a next b)
