@@ -1,4 +1,4 @@
-(include "../2/28_prime.scm")
+(load "../2/28_prime.scm")
 
 
 ;;---
