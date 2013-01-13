@@ -3,7 +3,8 @@
     (if (null? items)
         items-selected
         (if (even-odd? (car items))
-            (even-or-odd (cdr items) (cons (car items) items-selected) even-odd?)
+            (even-or-odd (cdr items)
+                         (cons (car items) items-selected) even-odd?)
             (even-or-odd (cdr items) items-selected even-odd?))))
   (if (odd? x)
       (cons x (reverse (even-or-odd items () odd?)))
