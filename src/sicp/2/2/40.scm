@@ -1,5 +1,4 @@
-(include "../../1/2/28_prime.scm")
-
+(load "../../1/2/28_prime.scm")
 
 ;; accumulate / fold-right
 
