@@ -44,5 +44,6 @@
 ;; tests
 (define (square x) (* x x))
 ((two square) 2)
+(define (identity x) x)
 (((add two one) identity) 1)
 (((add two one) square) 2)
