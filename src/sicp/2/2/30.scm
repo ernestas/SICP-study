@@ -19,7 +19,7 @@
 
 ;; tests
 
-(define tree-to-square (list 1(list 2 (list 3 4) 5) (list 6 7)))
+(define tree-to-square (list 1 (list 2 (list 3 4) 5) (list 6 7)))
 
 (square-tree     tree-to-square)
 (square-tree-map tree-to-square)
