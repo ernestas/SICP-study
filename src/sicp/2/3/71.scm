@@ -38,7 +38,8 @@
 ;; n = 10
 ;;  most frequent: 1 bit
 ;; least frequent: 9 bits
-(generate-huffman-tree '((a 1) (b 2) (c 4) (d 8) (e 16) (f 32) (g 64) (h 128) (i 256) (j 512)))
+(generate-huffman-tree '((a 1) (b 2) (c 4) (d 8) (e 16)
+                         (f 32) (g 64) (h 128) (i 256) (j 512)))
 
 ;; for any n:
 ;;  most frequent: 1 bit

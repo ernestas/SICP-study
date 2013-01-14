@@ -14,8 +14,10 @@
       false
       (let ((entry-object (entry set-of-records)))
         (cond ((= given-key entry-object) entry-object)
-              ((< given-key entry-object) (lookup given-key (left-branch set-of-records)))
-              ((> given-key entry-object) (lookup given-key (right-branch set-of-records)))))))
+              ((< given-key entry-object)
+               (lookup given-key (left-branch set-of-records)))
+              ((> given-key entry-object)
+               (lookup given-key (right-branch set-of-records)))))))
 
 ;; tests
 
