@@ -1,5 +1,5 @@
 ;; deriv, variable?, same-variable?, =number?
-(include "56_deriv.scm")
+(load "56_deriv.scm")
 
 ;; list-end
 

@@ -1,5 +1,5 @@
 ;; leafs and trees
-(include "67_leafs_and_trees.scm")
+(load "67_leafs_and_trees.scm")
 
 ;; decode
 
