@@ -63,7 +63,7 @@
 
 sample-tree
 (newline)
-(print sample-message-encoded)
+(display sample-message-encoded)
 (newline)
 (length sample-message-encoded)
 ;; fixed length encoding to encode 8 symbols

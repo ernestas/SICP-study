@@ -3,7 +3,7 @@
 
 (define l ''abracadabra)
 
-(print l)
+(display l)
 
 (newline)(newline)
 
