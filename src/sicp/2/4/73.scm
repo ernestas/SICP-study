@@ -115,7 +115,7 @@
 ;; tests
 
 ;; put & get procedures
-(include "73_put_get.scm")
+(load "73_put_get.scm")
 
 
 (install-deriv-sum-package)

@@ -5,7 +5,7 @@
 
 ;; ********************
 ;; apply-generic & tags
-(include "87_apply_generic_and_tags.scm")
+(load "87_apply_generic_and_tags.scm")
 
 ;; ******************
 ;; generic arithmetic
@@ -147,7 +147,7 @@
 ;; tests
 
 ;; put & get procedures
-(include "../4/73_put_get.scm")
+(load "../4/73_put_get.scm")
 
 (install-integer-package)
 (install-polynomial-package)

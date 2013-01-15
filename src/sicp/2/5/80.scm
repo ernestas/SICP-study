@@ -5,7 +5,7 @@
 
 ;; ********************
 ;; apply-generic & tags
-(include "78_apply_generic_and_tags.scm")
+(load "78_apply_generic_and_tags.scm")
 
 ;; ******************
 ;; generic arithmetic
@@ -95,8 +95,8 @@
 
 (define (install-complex-package)
   ;; imported procedures from rectangular and polar packages
-  (include "77_complex_rectangular.scm")
-  (include "77_complex_polar.scm")
+  (load "77_complex_rectangular.scm")
+  (load "77_complex_polar.scm")
   (install-rectangular-package)
   (install-polar-package)
   (define (real-part z) (apply-generic 'real-part z))
@@ -157,7 +157,7 @@
 ;; tests
 
 ;; put & get procedures
-(include "../4/73_put_get.scm")
+(load "../4/73_put_get.scm")
 
 (install-scheme-number-package)
 (install-rational-package)

@@ -1,6 +1,6 @@
 ;; ********************
 ;; apply-generic & tags
-(include "78_apply_generic_and_tags.scm")
+(load "78_apply_generic_and_tags.scm")
 
 ;; ******************
 ;; generic arithmetic
@@ -39,7 +39,7 @@
 ;; tests
 
 ;; put & get procedures
-(include "../4/73_put_get.scm")
+(load "../4/73_put_get.scm")
 
 
 (install-scheme-number-package)
