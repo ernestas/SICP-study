@@ -2,8 +2,7 @@
 
 (define (random-in-range low high)
   (let ((range (- high low)))
-    ;; changed a little to make it run in DrRacket
-    (+ low (* (random) range))))
+    (+ low (random range))))
 (define (monte-carlo trials experiment)
   (define (iter trials-remaining trials-passed)
     (cond ((= trials-remaining 0)
