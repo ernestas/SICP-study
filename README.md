@@ -2,8 +2,8 @@
 
 [http://mitpress.mit.edu/sicp/](http://mitpress.mit.edu/sicp/)
 
-All exercises were done in MIT/GNU Scheme. With the exception of 2.2.44 - 2.2.52,
-which were done in DrRacket under PrettyBig.
+All exercises were done in MIT/GNU Scheme. With the exception of 2.2.44-52 and
+3.1.06, which were done in DrRacket under PrettyBig.
 
 ## Video Lectures by Hal Abelson and Gerald Jay Sussman
 
