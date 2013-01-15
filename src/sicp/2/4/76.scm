@@ -12,6 +12,6 @@
 ;; New types can be added additively, by defining new data type(procedure).
 ;; New operations will require code to be altered in all data types.
 
-
 ;; If new types must often be added, message-passing style is most appropriate.
-;; If new operations must often be added, data-directed style is most appropriate.
+;; If new operations must often be added, data-directed style is most
+;; appropriate.

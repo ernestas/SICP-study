@@ -5,7 +5,8 @@
     (let ((proc (get op type-tags)))
       (if proc
           (apply proc (map contents args))
-          (error "No method for these types -- APPLY-GENERIC" (list op type-tags))))))
+          (error "No method for these types -- APPLY-GENERIC"
+                 (list op type-tags))))))
 
 (define (attach-tag type-tag contents)
   (if (number? contents)

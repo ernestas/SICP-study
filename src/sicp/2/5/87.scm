@@ -91,7 +91,8 @@
                          (adjoin-term t2
                                       (add-terms L1 (rest-terms L2))))
                         (else (adjoin-term (make-term (order t1)
-                                                      (add (coeff t1) (coeff t2)))
+                                                      (add (coeff t1)
+                                                           (coeff t2)))
                                            (add-terms (rest-terms L1)
                                                       (rest-terms L2)))))))))
 
