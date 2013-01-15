@@ -154,11 +154,11 @@
 ;; put-coercion & get-coercion procedures
 ;; NOTE: not yet covered in the book
 ;; used solely for the purposes of testing
-(define *coercion-table* (make-hash-table 'equal))
+(define *coercion-table* (make-equal-hash-table))
 (define (put-coercion type-from type-to proc)
-  (hash-table-put! *coercion-table* (list type-from type-to) proc))
+  (hash-table/put! *coercion-table* (list type-from type-to) proc))
 (define (get-coercion type-from type-to)
-  (hash-table-get *coercion-table* (list type-from type-to) #f))
+  (hash-table/get *coercion-table* (list type-from type-to) #f))
 
 ;; put & get procedures
 (load "../4/73_put_get.scm")
