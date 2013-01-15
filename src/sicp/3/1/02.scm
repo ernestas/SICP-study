@@ -1,10 +1,10 @@
 (define (make-monitored f)
   (define counter 0)
-    (λ (input)
-      (cond ((eq? input 'how-many-calls?) counter)
-            ((eq? input 'reset-count) (set! counter 0))
-            (else (begin (set! counter (+ 1 counter))
-                         (f input))))))
+  (lambda (input)
+    (cond ((eq? input 'how-many-calls?) counter)
+	  ((eq? input 'reset-count) (set! counter 0))
+	  (else (begin (set! counter (+ 1 counter))
+		       (f input))))))
 
 ;; tests
 

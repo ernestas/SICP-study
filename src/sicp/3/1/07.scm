@@ -22,7 +22,7 @@
 ;; make-joint
 
 (define (make-joint account acc-password new-password)
-  (λ (password m)
+  (lambda (password m)
     (if (eq? password new-password)
         (account acc-password m)
         (error "Bad password -- MAKE-JOINT" new-password))))

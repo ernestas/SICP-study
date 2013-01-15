@@ -1,6 +1,6 @@
 (define f
   (let ((state 0))
-    (λ (n)
+    (lambda (n)
       (let ((state-internal state))
         (set! state n)
         state-internal))))

@@ -1,5 +1,5 @@
 (define (make-accumulator balance)
-  (λ (x) (set! balance (+ balance x))
+  (lambda (x) (set! balance (+ balance x))
     balance))
 
 ;; tests
