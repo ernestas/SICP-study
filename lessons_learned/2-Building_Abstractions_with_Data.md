@@ -53,7 +53,7 @@ The sequence paradigm is extended to include many computations that are commonly
 
 *Message passing* - intelligent data objects (procedures) that dispatch on operation names.
 
-Which dispatch to use when: [2/76.scm](https://github.com/ernestas/SICP-study/blob/master/2/76.scm)
+Which dispatch to use when: [2/4/76.scm](https://github.com/ernestas/SICP-study/blob/master/src/sicp/2/4/76.scm)
 
 ## 2.5 Systems with Generic Operations
 
