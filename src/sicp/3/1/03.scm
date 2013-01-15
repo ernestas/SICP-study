@@ -8,7 +8,7 @@
     balance)
 
   (define (bad-password amount)
-    (print "Incorrect password"))
+    (display "Incorrect password"))
 
   (define (dispatch password m)
     (if (eq? password acc-password)

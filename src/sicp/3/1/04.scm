@@ -13,7 +13,7 @@
     (begin (set! bad-pass (+ bad-pass 1))
            (if (> bad-pass 7)
                call-the-cops
-               (print "Incorrect password"))))
+               (display "Incorrect password"))))
 
   (define call-the-cops "Five-o is on the way")
 
