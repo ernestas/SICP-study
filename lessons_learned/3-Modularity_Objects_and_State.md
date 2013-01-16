@@ -47,7 +47,7 @@ To model compound objects with changing state, design data abstractions to inclu
 
 **Queues** and **Tables**
 
-**Event-driven simulation**, in which actions ("events") trigger further events that happen at a later time, which in turn trigger more events, and so so.
+**Event-driven simulation**, in which actions ("events") trigger further events that happen at a later time, which in turn trigger more events, and so on.
 
 _Nondirectionality_ of computation is the distinguishing feature of **constraint-based systems**.
 
