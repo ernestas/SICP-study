@@ -11,8 +11,10 @@
       false
       (let ((entry-object (entry records)))
         (cond ((= given-key (key entry-object)) entry-object)
-              ((< given-key (key entry-object)) (lookup-tree given-key (left-branch records)))
-              ((> given-key (key entry-object)) (lookup-tree given-key (right-branch records)))))))
+              ((< given-key (key entry-object))
+               (lookup-tree given-key (left-branch records)))
+              ((> given-key (key entry-object))
+               (lookup-tree given-key (right-branch records)))))))
 (define (key record)
   (car record))
 
@@ -27,12 +29,14 @@
     (> (key a) (key b)))
   (cond ((null? set) (make-tree x '() '()))
         ((entry-equal? x (entry set)) set)
-        ((entry-less-than? x (entry set)) (make-tree (entry set)
-                                                     (adjoin-set x (left-branch set))
-                                                     (right-branch set)))
-        ((entry-more-than? x (entry set)) (make-tree (entry set)
-                                                     (left-branch set)
-                                                     (adjoin-set x (right-branch set))))))
+        ((entry-less-than? x (entry set))
+         (make-tree (entry set)
+                    (adjoin-set x (left-branch set))
+                    (right-branch set)))
+        ((entry-more-than? x (entry set))
+         (make-tree (entry set)
+                    (left-branch set)
+                    (adjoin-set x (right-branch set))))))
 
 ;; make-table using binary tree
 
