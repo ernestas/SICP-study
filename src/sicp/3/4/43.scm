@@ -20,9 +20,9 @@
 ;; Peter (exchange a1 a2)
 ;; Paul  (exchange a1 a3)
 ;; From the book:
-;; For example, Peter might compute the difference in the balances for a1 and a2,
-;; but then Paul might change the balance in a1 before Peter is able to complete
-;; the exchange.
+;; For example, Peter might compute the difference in the balances for a1 and
+;; a2, but then Paul might change the balance in a1 before Peter is able to
+;; complete the exchange.
 
 
 ;; c
