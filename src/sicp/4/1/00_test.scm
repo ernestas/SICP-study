@@ -6,7 +6,7 @@
   (assert-equal "hey" (interpret "hey"))
   (assert-equal 666666666222 (interpret 666666666222) 666666666222))
 
-(define-test (test-exprs )
+(define-test (test-exprs)
   (assert-equal 3 (interpret '(+ 1 2)))
   (assert-equal 2 (interpret '(* (- 2 3) (- 4 6))))
   (assert-equal 11 (interpret '(+ (* 1 2) (/ 6 2) (* (- 5 4) 2 3)))))
@@ -25,20 +25,14 @@
   ; note: -cond- also tests how -begin- works
   (assert-true (interpret '(cond (false false) (else true))))
   (assert-true (interpret '(cond (true true) (else false))))
-  (assert-true
-    (interpret
-      '(cond
-        ((= 5 6) false)
-        ((= 4 5) false)
-        ((= 5 5) true)
-        (else false))))
-  (assert-true
-    (interpret
-      '(cond
-        ((= 5 6) false)
-        ((= 4 5) false)
-        ((= 51 5) false)
-        (else (= 1 1))))))
+  (assert-true (interpret '(cond ((= 5 6) false)
+                                 ((= 4 5) false)
+                                 ((= 5 5) true)
+                                 (else false))))
+  (assert-true (interpret '(cond ((= 5 6) false)
+                                 ((= 4 5) false)
+                                 ((= 51 5) false)
+                                 (else (= 1 1))))))
 
 (define-test (test-vars)
   (interpret '(define joe 12))
