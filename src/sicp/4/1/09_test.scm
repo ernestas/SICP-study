@@ -1,0 +1,13 @@
+(load "08_test.scm")
+
+(define-test (test-while)
+  (interpret '(define (fib n)
+                (let ((a 1) (b 0))
+                  (while (> n 0)
+                         (let ((aa a))
+                           (begin (set! a (+ a b))
+                                  (set! b aa)
+                                  (set! n (- n 1)))))
+                  b)))
+  (assert-equal 55 (interpret '(fib 10)))
+  (assert-equal 89 (interpret '(fib 11))))
