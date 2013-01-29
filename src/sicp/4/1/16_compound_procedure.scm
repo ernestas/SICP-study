@@ -1,0 +1,36 @@
+(define (definition? exp)
+  (tagged-list? exp 'define))
+
+(define (scan-out-defines body)
+  (let ((let-exps '())
+        (set-exps '())
+        (other-exps '()))
+    (let scan-out-iter ((remaining-body body))
+      (let ((first-exp (car remaining-body))
+            (rest-exps (cdr remaining-body)))
+        (cond ((null? remaining-body) '())
+              ((definition? first-exp)
+               (let ((def-var (definition-variable first-exp))
+                     (def-val (definition-value first-exp)))
+                 (set! let-exps (cons (list def-var ''*unassigned*)
+                                      let-exps))
+                 (set! set-exps (cons (cons 'set! (list def-var def-val))
+                                      set-exps))))
+              (else (set! other-exps (append other-exps
+                                             (list first-exp)))))
+        (if (not (null? rest-exps))
+            (scan-out-iter rest-exps))))
+    (if (null? let-exps)
+        body
+        (list (append (list 'let let-exps)
+                      (append set-exps other-exps))))))
+
+(define (make-procedure parameters body env)
+  (list 'procedure parameters (scan-out-defines body) env))
+
+(define (compound-procedure? p)
+  (tagged-list? p 'procedure))
+
+(define (procedure-parameters p) (cadr p))
+(define (procedure-body p) (caddr p))
+(define (procedure-environment p) (cadddr p))
