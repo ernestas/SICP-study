@@ -13,11 +13,15 @@ LISP *procedures* control *processes* which are *imperative* knowledge.
 
 ## 1.1 The Elements of Programming
 
-The means that the language provides for combining simple ideas to form more complex ideas:
+The means that the language provides for combining simple ideas to form more
+complex ideas:
 
-* *primitive expressions*, which represent the simplest entities the language is concerned with,
-* *means of combination*, by which compound elements are built from simpler ones, and
-* *means of abstraction*, by which compound elements can be named and manipulated as units.
+* *primitive expressions*, which represent the simplest entities the language is
+  concerned with,
+* *means of combination*, by which compound elements are built from simpler
+  ones, and
+* *means of abstraction*, by which compound elements can be named and
+  manipulated as units.
 
 ````` scheme
 (define square (λ (x) (* x x)))
