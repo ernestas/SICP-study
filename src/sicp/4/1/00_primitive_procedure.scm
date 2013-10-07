@@ -13,6 +13,8 @@
         (list 'not not)
         (list 'equal? equal?)
         (list 'abs abs)
+        (list 'xor (lambda (a b) (or (and a (not b))
+                                     (and b (not a)))))
         (list '= =)
         (list '< <)
         (list '> >)
