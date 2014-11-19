@@ -1,16 +1,5 @@
 # 1 Building Abstractions with Procedures
 
-### Declarative (what) vs imperative (how) knowledge
-
-LISP *procedures* control *processes* which are *imperative* knowledge.
-
-### Techniques for controlling complexity:
-
-* Black box abstraction
-* Conventional interfaces
-* Metalinguistic abstraction
-
-
 ## 1.1 The Elements of Programming
 
 The means that the language provides for combining simple ideas to form more
