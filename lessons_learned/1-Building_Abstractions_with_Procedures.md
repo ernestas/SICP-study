@@ -6,11 +6,11 @@ The means that the language provides for combining simple ideas to form more
 complex ideas:
 
 * *primitive expressions*, which represent the simplest entities the language is
-  concerned with,
+  concerned with `+ * < =`,
 * *means of combination*, by which compound elements are built from simpler
-  ones, and
+  ones `() cond if`, and
 * *means of abstraction*, by which compound elements can be named and
-  manipulated as units.
+  manipulated as units `(define square (λ (x) (* x x)))`.
 
 ````` scheme
 (define square (λ (x) (* x x)))
