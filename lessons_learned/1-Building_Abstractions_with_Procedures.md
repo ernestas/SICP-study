@@ -29,6 +29,9 @@ complex ideas:
 
 ## 1.2 Procedures and the Processes They Generate
 
+The key to understanding complicated things is to know what _not_ to look at
+and what _not_ compute and what _not_ to think.
+
 ### Recursive vs Iterative *Processes*
 
 
