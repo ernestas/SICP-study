@@ -32,7 +32,7 @@ complex ideas:
 The key to understanding complicated things is to know what _not_ to look at
 and what _not_ compute and what _not_ to think.
 
-### Recursive vs Iterative *Processes*
+*Processes* can be Recursive or Iterative
 
 
 ## 1.3 Formulating Abstractions with Higher-Order Procedures
