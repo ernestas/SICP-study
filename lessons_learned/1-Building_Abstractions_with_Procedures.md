@@ -43,8 +43,11 @@ as syntactic sugar.
 
 ## 1.3 Formulating Abstractions with Higher-Order Procedures
 
-### Higher order procedures (procedures have first-class status):
+Higher order procedures have first-class status.
 
-* Procedures named by variables
-* Procedures as arguments
-* Procedures as returned values
+### The rights and privileges of first-class citizens
+
+* To be named by variables.
+* To be passed as arguments.
+* To be returned as values of procedures.
+* To be incorporated into data structures.
