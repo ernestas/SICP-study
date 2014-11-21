@@ -34,6 +34,12 @@ and what _not_ compute and what _not_ to think.
 
 *Processes* can be Recursive or Iterative
 
+Seheme is _tail-recursive_. It will execute an iterative process in constant
+space, even if the iterative process is described by a recursive procedure. With
+a _tail-recursive_ implementation, iteration can be expressed using the ordinary
+procedure call mechanism, so that special iteration constructs are useful only
+as syntactic sugar.
+
 
 ## 1.3 Formulating Abstractions with Higher-Order Procedures
 
