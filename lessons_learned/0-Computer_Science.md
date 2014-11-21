@@ -40,13 +40,13 @@ reality.
 * Express generality (fixed-point)
 
 * Primitive elements
-    * Primitive procedures (+ * < =)
-    * Primitive data (23 1.738)
+    * Primitive procedures `+ * < =`
+    * Primitive data `23 1.738`
 * Means of combination
-    * Procedure composition (() cond if)
+    * Procedure composition `() cond if`
     * Construction of compound data
 * Means of abstraction
-    * Procedure definition (define)
+    * Procedure definition `define`
     * Simple data abstraction
 * Capturing common patterns
     * Higher-order procedures
