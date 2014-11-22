@@ -44,7 +44,7 @@ reality.
     * Primitive data `23 1.738`
 * Means of combination
     * Procedure composition `() cond if`
-    * Construction of compound data
+    * Construction of compound data `cons`
 * Means of abstraction
     * Procedure definition `define`
     * Simple data abstraction
