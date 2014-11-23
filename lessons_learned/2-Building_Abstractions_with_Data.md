@@ -58,6 +58,18 @@ expressed using nested loops.
 
 ### *Metalinguistic abstraction* - a picture language
 
+_Stratified design_ is the notion that a complex system should be structured as
+a sequence of levels that are described using a sequence of _languages_. Each
+level is constructed by combining parts that are regarded as primitive at that
+level, and the parts constructed at each level are used as primitives at the
+next level. The language used at each level of a stratified design has
+primitives, means of combination, and means of abstraction appropriate to that
+level of detail.
+
+_Stratified design_ helps make programs _robust_, that is, it makes it likely
+that small changes in a specification will require correspondingly small changes
+in the program.
+
 
 ## 2.3 Symbolic Data
 
