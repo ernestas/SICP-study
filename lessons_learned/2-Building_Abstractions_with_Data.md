@@ -48,6 +48,14 @@ signal-processing, sequence flows through procedures.
 The sequence paradigm is extended to include many computations that are commonly
 expressed using nested loops.
 
+````` scheme
+(flatmap
+ (lambda (i)
+   (map (lambda (j) (list i j))
+        (enumerate-interval 1 (- i 1))))
+ (enumerate-interval 1 n))
+`````
+
 ### *Metalinguistic abstraction* - a picture language
 
 
