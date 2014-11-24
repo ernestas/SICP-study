@@ -73,6 +73,17 @@ in the program.
 
 ## 2.3 Symbolic Data
 
+### Quotation
+
+Allowing quotation in a language wreaks havoc with the ability to reason about
+the language in simple terms, because it destroys the notion that equals can be
+substituted for equals.
+
+Quotation is powerful because it gives us a way to build expressions that
+manipulate other expressions. But allowing statements in a language that talk
+about other statements in that language makes it very difficult to maintain any
+coherent principle of what “equals can be substituted for equals” should mean.
+
 ### Representing sets as:
 
 * unordered lists
