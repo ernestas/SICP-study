@@ -101,13 +101,28 @@ the specific characteristics of the medium. It creates and assigns a
 
 ## 2.4 Multiple Representation for Abstract Data
 
+Data-abstraction barriers are powerful tools for controlling complexity. By
+isolating the underlying representations of data objects, we can divide the task
+of designing a large program into smaller tasks that can be performed
+separately. But this kind of data abstraction is not yet powerful enough,
+because it may not always make sense to speak of “the underlying representation”
+for a data object.
+
+So in addition to the data-abstraction barriers that isolate representation from
+use, we need abstraction barriers that isolate different design choices from
+each other and permit different choices to coexist in a single program.
+Furthermore, since large programs are often created by combining pre-existing
+modules that were designed in isolation, we need conventions that permit
+programmers to incorporate modules into larger systems additively, that is,
+without having to redesign or reimplement these modules.
+
 *Dispatch on type* is a general strategy of checking the type of a datum and
-calling an appropriate procedure.
+calling an appropriate procedure. This strategy is _not additive_.
 
 *Data-directed programming* is a "dispatch" technique on procedures for
 integrating (additively) separately developed data-type modules, based on the
-programmers manual setup of dynamic tables for procedure access. In
-modern object-oriented programming languages it is implemented as polymorphism.
+programmers manual setup of dynamic tables for procedure access. In modern
+object-oriented programming languages it is implemented as _polymorphism_.
 
 *Message passing* - intelligent data objects (procedures) that dispatch on
 operation names.
