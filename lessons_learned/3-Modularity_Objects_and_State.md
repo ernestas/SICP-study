@@ -25,7 +25,11 @@ include `set!` in our computer language.
   _lambda calculus_.
 * _Imperative programming_ is a programming paradigm that describes computation
   in terms of statements that change a program _state_. It introduces
-  _time-varying state_.
+  _time-varying state_. In addition to raising complications about computational
+  models, programs written in imperative style are susceptible to bugs that
+  cannot occur in functional programs. The complexity of imperative programs
+  becomes even worse if we consider applications in which several processes
+  execute concurrently.
 
 
 ## 3.2 The Environment Model of Evaluation
