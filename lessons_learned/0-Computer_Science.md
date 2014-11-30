@@ -38,7 +38,6 @@ reality.
 
 * Suppress details (sqrt)
 * Express generality (fixed-point)
-
 * Primitive elements
     * Primitive procedures `+ * < =`
     * Primitive data `23 1.738`
