@@ -6,8 +6,8 @@ An **evaluator** (or **interpreter**) for a programming language is a procedure
 that, when applied to an expression of the language, performs the actions
 required to evaluate that expression.
 
-**The evaluator, which determines the meaning of expressions in a programming
-language, is just another program.**
+The most fundamental idea in programming: **The evaluator, which determines the
+meaning of expressions in a programming language, is just another program.**
 
 ## 4.1 The Metacircular Evaluator
 
