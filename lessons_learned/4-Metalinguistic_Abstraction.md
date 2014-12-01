@@ -26,11 +26,11 @@ of abstraction - that binds a collection of primitives to form a language.
 The **evaluation process** can be described as the _interplay_ between two
 procedures: **eval** and **apply**:
 
-* **Eval** takes as arguments an expression and an environment. It classifies
-  the expression and directs its evaluation. Eval is structured as a case
-  analysis of the syntactic type of the expression to be evaluated.
-* **Apply** takes two arguments, a procedure and a list of arguments to which
-  the procedure should be applied.
+* **Eval** takes as arguments an _expression_ and an _environment_. It
+  classifies the expression and directs its evaluation. Eval is structured as a
+  case analysis of the syntactic type of the expression to be evaluated.
+* **Apply** takes a _procedure_ and a _list of arguments_ to which the procedure
+  should be applied.
 
 ## 4.2 Variations on a Scheme — Lazy Evaluation
 
