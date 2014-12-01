@@ -19,6 +19,10 @@ descriptive languages.
 An **evaluator** that is written in the same language that it evaluates is said
 to be **metacircular**.
 
+The job of the evaluator is not to specify the primitives of the language, but
+rather to provide the connective tissue - the means of combination and the means
+of abstraction - that binds a collection of primitives to form a language.
+
 The **evaluation process** can be described as the _interplay_ between two
 procedures: **eval** and **apply**:
 
