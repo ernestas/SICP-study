@@ -30,7 +30,14 @@ procedures: **eval** and **apply**:
   classifies the expression and directs its evaluation. Eval is structured as a
   case analysis of the syntactic type of the expression to be evaluated.
 * **Apply** takes a _procedure_ and a _list of arguments_ to which the procedure
-  should be applied.
+  should be applied. Apply classifies procedures into two kinds: it calls
+  apply-primitive-procedure to apply primitives; it applies compound procedures
+  by sequentially evaluating the expressions that make up the body of the
+  procedure. The environment for the evaluation of the body of a compound
+  procedure is constructed by extending the base environment carried by the
+  procedure to include a frame that binds the parameters of the procedure to the
+  arguments to which the procedure is to be applied.
+
 
 ## 4.2 Variations on a Scheme — Lazy Evaluation
 
