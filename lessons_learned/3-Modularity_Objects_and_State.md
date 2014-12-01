@@ -135,7 +135,6 @@ functionality that mutexes have).
 
 ## 3.5 Streams
 
-
 If **time** is measured in discrete steps, then we can model a **time** function
 as a (possibly infinite) sequence.
 
