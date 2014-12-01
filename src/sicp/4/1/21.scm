@@ -1,3 +1,5 @@
+;; FUN
+
 (load "20_evaluator.scm")
 (load "../../../../vendor/test-manager/load.scm")
 (load "20_test.scm")
