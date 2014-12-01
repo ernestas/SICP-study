@@ -9,6 +9,11 @@ required to evaluate that expression.
 The most fundamental idea in programming: **The evaluator, which determines the
 meaning of expressions in a programming language, is just another program.**
 
+The technology for coping with large-scale computer systems merges with the
+technology for building new computer languages, and _computer science_ itself
+becomes no more (and no less) than the discipline of constructing appropriate
+descriptive languages.
+
 ## 4.1 The Metacircular Evaluator
 
 An **evaluator** that is written in the same language that it evaluates is said
