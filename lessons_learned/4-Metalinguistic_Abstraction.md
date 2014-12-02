@@ -38,6 +38,17 @@ procedures: **eval** and **apply**:
   procedure to include a frame that binds the parameters of the procedure to the
   arguments to which the procedure is to be applied.
 
+We can transform the evaluator to be significantly more efficient
+by arranging things so that syntactic analysis is performed only once.
+We split eval, which takes an expression and an environment, into two
+parts. The procedure analyze takes only the expression. It performs the
+syntactic analysis and returns a new procedure, the execution procedure,
+that encapsulates the work to be done in executing the analyzed expres-
+sion. The execution procedure takes an environment as its argument
+and completes the evaluation. This saves work because analyze will be
+called only once on an expression, while the execution procedure may
+be called many times.
+
 
 ## 4.2 Variations on a Scheme — Lazy Evaluation
 
