@@ -27,7 +27,8 @@
                 (require (not (= (abs (- fletcher cooper)) 1)))
                 (list (list 'baker baker)
                       (list 'cooper cooper)
-                      (list 'fletcher fletcher) (list 'miller miller)
+                      (list 'fletcher fletcher)
+                      (list 'miller miller)
                       (list 'smith smith)))))
 
 (load "35_repl.scm")

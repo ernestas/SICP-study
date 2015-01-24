@@ -30,7 +30,8 @@
                 (require (not (= (abs (- fletcher cooper)) 1)))
                 (list (list 'baker baker)
                       (list 'cooper cooper)
-                      (list 'fletcher fletcher) (list 'miller miller)
+                      (list 'fletcher fletcher)
+                      (list 'miller miller)
                       (list 'smith smith)))))
 
 (define start-time (runtime))
@@ -56,7 +57,8 @@
                  (distinct? (list baker cooper fletcher miller smith)))
                 (list (list 'baker baker)
                       (list 'cooper cooper)
-                      (list 'fletcher fletcher) (list 'miller miller)
+                      (list 'fletcher fletcher)
+                      (list 'miller miller)
                       (list 'smith smith)))))
 
 (define start-time (runtime))
