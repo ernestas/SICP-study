@@ -34,6 +34,8 @@
 (interpret '(multiple-dwelling-reordered))
 (display (- (runtime) start-time))
 
+(newline)
+
 (interpret '(define (multiple-dwelling-efficient)
               (let ((cooper (amb 2 3 4 5))
                     (miller (amb 3 4 5)))
