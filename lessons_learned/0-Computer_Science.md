@@ -1,7 +1,8 @@
 # 0 Computer Science
 
-<s>Science</s> Engineering, Art, Magic
 <s>Computer</s> Process, Procedure
+
+<s>Science</s> Engineering, Art, Magic
 
 When some field is just getting started, and you don't really understand it very
 well, it is very easy to confuse the esence of what you are doing with the tools
