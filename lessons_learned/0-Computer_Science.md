@@ -10,11 +10,11 @@ that you use.
 
 We are starting to learn how to formalise intuitions about process.
 
-### Declarative (what) vs imperative (how) knowledge
+## Declarative (what) vs imperative (how) knowledge
 
 LISP *procedures* control *processes* which are *imperative* knowledge.
 
-### Techniques for controlling complexity:
+## Techniques for controlling complexity:
 
 This is what the computer science is all about.
 
@@ -35,7 +35,7 @@ So in that sense, computer science is like an abstract form of engineering. It's
 the kind of engineering where you ignore the constraints that are imposed by
 reality.
 
-#### 1. Black box abstraction
+### 1. Black box abstraction
 
 * Suppress details (sqrt)
 * Express generality (fixed-point)
@@ -52,14 +52,14 @@ reality.
     * Higher-order procedures
     * Data as procedures
 
-#### 2. Conventional interfaces
+### 2. Conventional interfaces
 
 * Generic oparators
 * Large-scale structures and modularity
 * Object-oriented programming
 * Operations on aggregates
 
-#### 3. Metalinguistic abstraction
+### 3. Metalinguistic abstraction
 
 * Interpretation apply-eval
 * Example - logic programming
