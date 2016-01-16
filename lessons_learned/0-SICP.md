@@ -1,4 +1,6 @@
-# 0 Computer Science
+# 0 SICP
+
+## Computer Science
 
 <s>Computer</s> Process, Procedure
 
