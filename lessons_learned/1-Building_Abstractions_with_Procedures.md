@@ -1,3 +1,14 @@
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [1 Building Abstractions with Procedures](#1-building-abstractions-with-procedures)
+    - [1.1 The Elements of Programming](#11-the-elements-of-programming)
+        - [Applicative order vs normal order evaluation:](#applicative-order-vs-normal-order-evaluation)
+    - [1.2 Procedures and the Processes They Generate](#12-procedures-and-the-processes-they-generate)
+    - [1.3 Formulating Abstractions with Higher-Order Procedures](#13-formulating-abstractions-with-higher-order-procedures)
+        - [The rights and privileges of first-class citizens](#the-rights-and-privileges-of-first-class-citizens)
+
+<!-- markdown-toc end -->
 # 1 Building Abstractions with Procedures
 
 ## 1.1 The Elements of Programming

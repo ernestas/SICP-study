@@ -1,3 +1,12 @@
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [4 Metalinguistic Abstraction](#4-metalinguistic-abstraction)
+    - [4.1 The Metacircular Evaluator](#41-the-metacircular-evaluator)
+    - [4.2 Variations on a Scheme — Lazy Evaluation](#42-variations-on-a-scheme--lazy-evaluation)
+    - [4.3 Variations on a Scheme — Nondeterministic Computing](#43-variations-on-a-scheme--nondeterministic-computing)
+
+<!-- markdown-toc end -->
 # 4 Metalinguistic Abstraction
 
 Metalinguistic abstraction -- establishing new languages.

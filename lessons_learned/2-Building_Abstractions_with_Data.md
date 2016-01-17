@@ -1,3 +1,23 @@
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [2 Building Abstractions with Data](#2-building-abstractions-with-data)
+    - [2.1 Introduction to Data Abstraction](#21-introduction-to-data-abstraction)
+        - [Data abstraction](#data-abstraction)
+        - [Procedural representation of pairs](#procedural-representation-of-pairs)
+    - [2.2 Hierarchical Data and the Closure Property](#22-hierarchical-data-and-the-closure-property)
+        - [Closure property](#closure-property)
+        - [Sequences as *conventional interfaces*](#sequences-as-conventional-interfaces)
+        - [Nested mappings](#nested-mappings)
+        - [*Metalinguistic abstraction* - a picture language](#metalinguistic-abstraction---a-picture-language)
+    - [2.3 Symbolic Data](#23-symbolic-data)
+        - [Quotation](#quotation)
+        - [Representing sets as:](#representing-sets-as)
+        - [Huffman encoding trees](#huffman-encoding-trees)
+    - [2.4 Multiple Representation for Abstract Data](#24-multiple-representation-for-abstract-data)
+    - [2.5 Systems with Generic Operations](#25-systems-with-generic-operations)
+
+<!-- markdown-toc end -->
 # 2 Building Abstractions with Data
 
 ## 2.1 Introduction to Data Abstraction

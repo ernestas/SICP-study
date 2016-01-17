@@ -1,3 +1,14 @@
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [3 Modularity, Objects and State](#3-modularity-objects-and-state)
+    - [3.1 Assignment and Local State](#31-assignment-and-local-state)
+    - [3.2 The Environment Model of Evaluation](#32-the-environment-model-of-evaluation)
+    - [3.3 Modeling with Mutable Data](#33-modeling-with-mutable-data)
+    - [3.4 Concurrency: Time Is of the Essence](#34-concurrency-time-is-of-the-essence)
+    - [3.5 Streams](#35-streams)
+
+<!-- markdown-toc end -->
 # 3 Modularity, Objects and State
 
 ## 3.1 Assignment and Local State

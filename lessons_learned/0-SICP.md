@@ -1,3 +1,15 @@
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [0 SICP](#0-sicp)
+    - [Computer Science](#computer-science)
+    - [Declarative (what) vs imperative (how) knowledge](#declarative-what-vs-imperative-how-knowledge)
+    - [Techniques for controlling complexity:](#techniques-for-controlling-complexity)
+        - [1. Black box abstraction](#1-black-box-abstraction)
+        - [2. Conventional interfaces](#2-conventional-interfaces)
+        - [3. Metalinguistic abstraction](#3-metalinguistic-abstraction)
+
+<!-- markdown-toc end -->
 # 0 SICP
 
 ## Computer Science
